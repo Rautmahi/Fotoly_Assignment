@@ -1,11 +1,17 @@
 import "./App.css";
-import Button from "@mui/material/Button";
+import Slider from "./Components/Slider";
+// import Button from "@mui/material/Button";
+
 function App() {
   return (
     <div className="App">
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
+      <br/>
+      <br/>
+      <br/>
+
+
+
+   <Slider/>
     </div>
   );
 }

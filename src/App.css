@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+
+.maindiv
+{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+.imagediv,.datadiv
+{
+  width:45%;
+  height: 400px;
+}
+.image
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.title
+{
+  font-size:30px;
+  font-weight: 800;
+  margin-top: 40px;
+  color:tomato
+}
+.description
+{
+  font-size: 15px;
+  font-style: italic;
+  color: darkslategray;
+}
+.buttondiv
+{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.play
+{
+  color: crimson;
+  font-size: 50px;
+}
