@@ -26,7 +26,7 @@ const Slider = () => {
         setCurrent((prevIndex) =>
           prevIndex === length - 1 ? 0 : prevIndex + 1
         );
-      }, 1000);
+      }, 3000);
       setPlay(id);
     } else {
       clearInterval(play);
