@@ -9,6 +9,8 @@ import { BsArrowLeftSquareFill } from "react-icons/bs";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import Box from '@mui/material/Box';
 
+
+
 const Slider = () => {
   const [current, setCurrent] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -93,7 +95,7 @@ const Slider = () => {
 
         <BsArrowRightSquareFill onClick={nextslide} />
 
-        {/* play and psude button */}
+        {/* play and pause button */}
         <Box className="playpausebtn">
           {!isPlaying ? (
             <BsFillPlayCircleFill
@@ -111,7 +113,7 @@ const Slider = () => {
       <Box className="buttondiv">
         <FcPrevious onClick={prevbtn} />
         <span>
-          {current} of {length}
+          {current+1} of {length}
         </span>
         <FcNext onClick={nextbtn} />
       </Box>

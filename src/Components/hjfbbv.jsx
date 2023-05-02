@@ -1,4 +1,11 @@
-<h1>Image Carousel Catalog</h1> 
+import React from 'react'
+
+const hjfbbv = () => {
+  return (
+    <div>
+
+
+ <h1>Image Carousel Catalog</h1> 
  <h2>Overview</h2>
 
 <p> This is an image carousel catalog that displays a collection of images with details. The first image is displayed with its details on the right when the catalog is opened.
@@ -30,3 +37,16 @@ ReactJs
 CSS3
 Material UI
 Netflify
+
+
+
+
+
+
+
+
+    </div>
+  )
+}
+
+export default hjfbbv
