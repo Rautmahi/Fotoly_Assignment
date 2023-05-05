@@ -20,18 +20,40 @@ const Slider = () => {
 
   const length = data.length;
 
-  useEffect(() => {
-    if (isPlaying) {
-      const id = setInterval(() => {
-        setCurrent((prevIndex) =>
-          prevIndex === length - 1 ? 0 : prevIndex + 1
-        );
-      }, 3000);
-      setPlay(id);
-    } else {
-      clearInterval(play);
+  
+  useEffect(()=>{
+    
+    const url=" "
+    
+    const fetchadata=async()=>{
+      
+      try{
+      const res=await fetch(url)
+      const info=res.data
+//       console.log(info)
+      
     }
-  }, [isPlaying, length]);
+    catch (e)
+    {
+      console.log(err)
+    }
+      
+     fetchadata() 
+    
+  },[])
+  
+//   useEffect(() => {
+//     if (isPlaying) {
+//       const id = setInterval(() => {
+//         setCurrent((prevIndex) =>
+//           prevIndex === length - 1 ? 0 : prevIndex + 1
+//         );
+//       }, 3000);
+//       setPlay(id);
+//     } else {
+//       clearInterval(play);
+//     }
+//   }, [isPlaying, length]);
 
   const handlePlayPauseClick = () => {
     setIsPlaying((prevState) => !prevState);
